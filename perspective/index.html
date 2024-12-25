@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 容器设置 perspective */
+        .card {
+            width: 200px;
+            height: 300px;
+            perspective: 800px;
+        }
+
+        .card-content {
+            width: 100%;
+            height: 100%;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: transform 0.5s;
+            transform-style: preserve-3d;
+        }
+
+
+        .card:hover .card-content {
+            transform: rotateY(30deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-content">Hover over me!</div>
+    </div>
+</body>
+
+</html>
